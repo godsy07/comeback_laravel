@@ -11,6 +11,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
@@ -22,4 +23,4 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/posts', function () {
     return view('posts.index');
-});
+})->name('posts');
