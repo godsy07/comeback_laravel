@@ -16,14 +16,7 @@ class RegisterController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         // Validation
-        // $this->validate($request, [
-        //     'name' => 'required|max:255',
-        //     'username' => 'required|max:255',
-        //     'email' => 'required|email|max:255',
-        //     'password' => 'required|confirmed'   // godson@123
-        // ]);
         $this->validate($request, [
             'name' => ['required', 'max:255'],
             'username' => ['required', 'max:255'],
