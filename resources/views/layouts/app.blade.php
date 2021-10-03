@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comback Laravel</title>
+    <title>Comeback Laravel</title>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
@@ -24,7 +24,7 @@
         <ul class="flex items-center">
             @auth
                 <li>
-                    <a href="" class="p-3">{{ auth()->user()->name }}</a>
+                    <a href="#" class="p-3">{{ auth()->user()->name }}</a>
                 </li>
                 <li>
                     <form action="{{ route('logout') }}" method="post" class="inline p-3">
